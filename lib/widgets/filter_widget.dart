@@ -15,6 +15,13 @@ class CustomDropdownMenu<T> extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DropdownButton<T>(
+     dropdownColor: Colors.grey,
+     borderRadius: BorderRadius.circular(10),
+      icon: const Icon(Icons.arrow_drop_down),
+      padding: const EdgeInsets.all(8.0),
+    
+
+      isExpanded: true,
       value: value,
       onChanged: onChanged,
       items: items.map<DropdownMenuItem<T>>((T item) {

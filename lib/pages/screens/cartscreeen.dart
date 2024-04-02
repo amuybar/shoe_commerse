@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class CartScreen extends StatelessWidget {
-  const CartScreen({Key? key}) : super(key: key);
+  const CartScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +14,7 @@ class CartScreen extends StatelessWidget {
         itemBuilder: (context, index) {
           return ListTile(
             title: Text('Product ${index + 1}'),
-            subtitle: Text('Price: \$100'),
+            subtitle: const Text('Price: \$100'),
             trailing: IconButton(
               icon: const Icon(Icons.delete),
               onPressed: () {
